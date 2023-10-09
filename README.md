@@ -55,7 +55,7 @@ source .venv/bin/activate
 You will need to install the following dependencies:
 
 ```
-pip install bresenham numpy matplotlib
+pip install bresenham numpy matplotlib scikit-learn
 ```
 
 ## 1. 5th Order Polynomial Trajectory (40 points)
