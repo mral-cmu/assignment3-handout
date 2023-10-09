@@ -42,6 +42,9 @@ Download the assignment.
 
 ```
 git clone git@github.com:mral-cmu/assignment3-handout.git
+cd assignment3-handout
+git lfs install
+git lfs pull
 ```
 
 Note: if the above command results in a Permission denied (public key)
