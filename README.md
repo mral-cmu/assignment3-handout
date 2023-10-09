@@ -8,6 +8,26 @@ be used by a quadrotor.
 2. Collaboration is encouraged but you should write final code on your own.
 
 ## 0. Setup
+Download the assignment.
+
+```
+git clone git@github.com:mral-cmu/assignment3-handout.git
+cd assignment3-handout
+git lfs install
+git lfs pull
+```
+
+Note: if the above command results in a Permission denied (public key)
+error, then try setting up an SSH key in your Github account using the
+instructions
+[here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+
+If the cloning still does not work, use
+
+```
+git clone https://github.com/mral-cmu/assignment3-handout.git
+```
+
 Copy the `quadrotor_control`, `quadrotor_model`, and `utils`
 directories from assignment 1 into `quadrotor_simulator_py`. This
 assignment will refer to some of the classes defined in the prior
@@ -36,26 +56,6 @@ You will need to install the following dependencies:
 
 ```
 pip install bresenham numpy matplotlib
-```
-
-Download the assignment.
-
-```
-git clone git@github.com:mral-cmu/assignment3-handout.git
-cd assignment3-handout
-git lfs install
-git lfs pull
-```
-
-Note: if the above command results in a Permission denied (public key)
-error, then try setting up an SSH key in your Github account using the
-instructions
-[here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
-
-If the cloning still does not work, use
-
-```
-git clone https://github.com/mral-cmu/assignment3-handout.git
 ```
 
 ## 1. 5th Order Polynomial Trajectory (40 points)
