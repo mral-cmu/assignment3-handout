@@ -4,9 +4,10 @@ from quadrotor_simulator_py.quadrotor_planning.polynomialtrajectory import Polyn
 
 class MuellerTrajectory(PolynomialTrajectory):
     def __init__(self, x0, xf, T):
-        """ Returns the coefficients of the 5th order
+        """ Calculates the coefficients of the 5th order
         polynomial trajectory given fixed starting position,
         velocity, and acceleration as well as duration, T.
+        The coefficients should be stored as self.coefficients.
         
         The polynomial is written as c0 + c1*t + ... c5*t^5.
         The input to the function are constraints and duration.
