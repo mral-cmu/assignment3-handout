@@ -83,4 +83,5 @@ class RRT:
             (idx, position): integer index and position pair
                              position represents a 1x2 numpy array
         """
+        # TODO: Assignment 3, Problem 3
         return (0, np.array([0,0]))
