@@ -4,12 +4,14 @@ from math import floor
 from quadrotor_simulator_py.quadrotor_control.state import State
 from quadrotor_simulator_py.quadrotor_planning.collision_checker import CollisionChecker
 
+GRID_WIDTH = 300
+
 class Node:
 
     def __init__(self, parent_idx, position):
 
         self.parent_idx = parent_idx
-        self.idx = position[1] * position[0] + position[0]
+        self.idx = position[1] * GRID_WIDTH + position[0]
         self.position = position
         self.children = []
 
@@ -25,6 +27,7 @@ class RRT:
         self.grid = grid
         self.tree = {}
         self.insert_root_node(start)
+        GRID_WIDTH = grid.shape[0]
 
     def run(self):
         """ Runs the RRT algorithm until a path is found between the start and
@@ -40,7 +43,7 @@ class RRT:
     def get_idx(self, position):
         x = position[0]
         y = position[1]
-        return y * x + x
+        return y * GRID_WIDTH + x
 
     def insert_root_node(self, position):
         idx = self.get_idx(position)
