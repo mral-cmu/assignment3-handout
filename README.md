@@ -135,3 +135,15 @@ Your RRT will be displayed in mauve and the path from the start to
 end point will be illustrated in cyan.
 
 ![Rapidly Exploring Random Tree](img/rrt.png)
+
+## 4. Grading with AutoLab
+To have your solutions graded, you will need to tar the `quadrotor_simulator_py`
+folder and upload to autolab.
+
+```
+tar -cvf quadrotor_simulator_py handin.tar
+```
+
+Autolab will run tests on each function you implement and you will
+receive a score out of 100.  You may upload as many times as you like.
+Note that we may regrade submissions after the deadline passes.
