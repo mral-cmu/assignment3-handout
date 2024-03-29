@@ -19,7 +19,7 @@ class ForwardArcTrajectory:
     initialized = False
 
     def __init__(self, curr_ref, cmd, T):
-        """ Calculates the 9th order forward arc motion primitive coefficients
+        """ Calculates the 8th order forward arc motion primitive coefficients
         
         Args:
             curr_ref is a state object for where to sample the trajectory
