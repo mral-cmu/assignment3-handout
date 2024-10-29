@@ -141,7 +141,7 @@ To have your solutions graded, you will need to tar the `quadrotor_simulator_py`
 folder and upload to autolab.
 
 ```
-tar -cvf quadrotor_simulator_py handin.tar
+tar -cvf handin.tar quadrotor_simulator_py
 ```
 
 Autolab will run tests on each function you implement and you will
