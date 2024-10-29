@@ -100,7 +100,7 @@ You will need to implement the function `get_ref` in
 
 ### 1.4 Managing multiple multi-axis trajectories (10 points)
 Managing multiple multi-axis trajectories can be challenging, because
-you need to manage the
+you need to carefully schedule the trajectories and account for time properly.
 To test your solution, you can run `test/test_multiflatspacetrajmanager.py`.
 
 ![Position](img/mpos.png)
