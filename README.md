@@ -136,14 +136,20 @@ end point will be illustrated in cyan.
 
 ![Rapidly Exploring Random Tree](img/rrt.png)
 
-## 4. Grading with AutoLab
-To have your solutions graded, you will need to tar the `quadrotor_simulator_py`
-folder and upload to autolab.
+## 4. Grading with Gradescope
+To have your solutions graded, you will need to zip the
+`quadrotor_simulator_py` folder and upload to Gradescope.
 
 ```
-tar -cvf handin.tar quadrotor_simulator_py
+cd assignment3-handout
+zip -r handin.zip quadrotor_simulator_py
 ```
 
-Autolab will run tests on each function you implement and you will
+Gradescope will run tests on each function you implement and you will
 receive a score out of 100.  You may upload as many times as you like.
 Note that we may regrade submissions after the deadline passes.
+
+The base image we use for Gradescope is Ubuntu 22.04. Ubuntu 22.04 has
+Python 3.10 installed by default. Your code may fail to pass the
+autograder tests if you use a higher version of Python (e.g., Python
+3.12).
